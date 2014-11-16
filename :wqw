@@ -413,8 +413,6 @@ module.exports = function ( grunt ) {
     server: {
       	options: {
         	port: 9001,
-		hostname:"ec2-54-69-231-67.us-west-2.compute.amazonaws.com",
-		keepalive:true
       	}
    }
   },
@@ -562,7 +560,7 @@ module.exports = function ( grunt ) {
   /**
    * The connect task
    */
-  grunt.registerTask( 'server', [ 'connect' ] );
+  grunt.registerTask( 'connect', [ 'connect' ] );
 
 
 
