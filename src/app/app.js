@@ -11,6 +11,7 @@ angular.module( 'ngBoilerplate', [
 })
 
 .run( function run () {
+      console.log("howdy");
 })
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
