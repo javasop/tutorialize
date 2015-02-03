@@ -9,5 +9,7 @@
     "angular-ui-router": "~0.2",
     "textAngular": "~1.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "flat-ui": "~2.2.2"
+  }
 }
