@@ -39,9 +39,9 @@
           <button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"
             ng-click="menuCollapsed = ! menuCollapsed">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-icon-bar"></span>
+            <span class="fa fa-icon-bar"></span>
+            <span class="fa fa-icon-bar"></span>
           </button>
           <div class="navbar-brand">
             Tutorialize
@@ -51,6 +51,7 @@
           </div>
         </div>
         <div class="collapse navbar-collapse" collapse="menuCollapsed">
+	<p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
           <ul class="nav navbar-nav">
             <li ui-sref-active="active">
               <a href ui-sref="home">
@@ -59,12 +60,12 @@
               </a>
             </li>
             <li ui-sref-active="active">
-              <a href ui-sref="about">
+              <a href ui-sref="help">
                 <i class="fa fa-info-circle"></i>
                 Help
               </a>
             </li>
-         </ul>
+                     </ul>
         </div>
       </div>
     </div>

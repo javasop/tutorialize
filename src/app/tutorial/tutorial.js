@@ -14,7 +14,8 @@
  */
 angular.module( 'ngBoilerplate.tutorial', [
   'ui.router',
-  'plusOne'
+  'plusOne',
+  'textAngular'
 ])
 
 /**
@@ -39,6 +40,7 @@ angular.module( 'ngBoilerplate.tutorial', [
  * And of course we define a controller for our route.
  */
 .controller( 'TutorialCtrl', function HomeController( $scope ) {
+	$scope.htmlVariable = "<p>HELOOOOOOOO</p>";
 })
 
 ;
