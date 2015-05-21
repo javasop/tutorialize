@@ -1,0 +1,89 @@
+/* Header */
+#header {
+  height: 77px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+#header h1 {
+  background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
+  height: 31px;
+  left: 15px;
+  line-height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 24px;
+  width: 191px;
+}
+#header h1 a {
+  display: block;
+}
+@media (max-width: 440px) {
+  #header h1 {
+    background: url("../img/logo-min.png") no-repeat scroll 0 0 transparent;
+    width: 32px;
+  }
+}
+@media (max-width: 767px) {
+  #header {
+    left: 0;
+    padding-top: 1px;
+    z-index: 1;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+  }
+  .menu-open #header {
+    left: 205px;
+  }
+  .fixed #header {
+    position: fixed;
+    z-index: 20;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    margin-top: -37px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  #header h1 {
+    top: auto;
+    left: auto;
+    margin: 7px auto;
+  }
+  .fixed #header h1 {
+    position: absolute;
+    top: auto;
+    left: 38px;
+    bottom: -4px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #header {
+    height: 38px;
+    margin-top: -18px;
+  }
+  #header h1 {
+    top: 3px;
+  }
+}
+#menu-trigger {
+  position: absolute;
+  font-size: 16px;
+  line-height: 16px;
+  top: 10px;
+  left: 7px;
+  color: #dddddd;
+  text-shadow: 0 1px 0 #000000;
+  z-index: 22 !important;
+  display: none;
+}
+.fixed #menu-trigger {
+  z-index: 20;
+  top: 44px;
+  bottom: 0;
+  left: 1px;
+  padding: 6px 7px 9px 6px;
+}
+@media (max-width: 767px) {
+  #menu-trigger {
+    display: block;
+  }
+}
